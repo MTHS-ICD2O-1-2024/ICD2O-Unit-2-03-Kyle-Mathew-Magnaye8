@@ -5,13 +5,17 @@
 // This file contains the JS functions for index.html
 
 /**
- * Do basic math.
+ * Handles the user input for street number and street name,
+ * saves them to variables, and outputs the information.
  */
+
+"use strict"
+
 function enterClicked() {
   // input
-  const firstName = document.getElementById("first-name").value
-  const userAge = parseInt(document.getElementById("age-entered").value)
+  const streetNumber = document.getElementById("street-number").value
+  const streetName = document.getElementById("street-name").value
   // output
   document.getElementById("user-info").innerHTML =
-    "Your info is: " + firstName + ", " + userAge + "."
+    "Your address is: " + streetNumber + " " + streetName + "."
 }
